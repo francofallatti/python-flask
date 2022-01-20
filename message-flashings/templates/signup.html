@@ -1,0 +1,9 @@
+{% extends 'layout.html' %} {% block title %} Sing up {% endblock title %} {%
+block body %}
+<h1>Sign up</h1>
+<form action="{{ url_for('signup') }}" method="post">
+  <p><input type="text" name="username" id="" /></p>
+  <p><input type="password" name="password" id="" /></p>
+  <input type="submit" value="Sign Up" />
+</form>
+{% endblock body %}
